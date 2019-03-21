@@ -169,6 +169,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  width: 80%;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding: 12px;
+  background-color: #17A2B8;
+  border-radius: 12px;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #117a8b;
+}
 .main-header {
   max-width: 1000px;
   margin: 0 auto;
