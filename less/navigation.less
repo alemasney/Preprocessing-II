@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+
+.main-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    .flex(@justify: space-between;);
+    padding: 25px 0;
+    border-bottom: 2px dashed @silver;
+
+    @media @mobile {
+        flex-direction: column;
+        padding-bottom: 8px;
+        padding-top: 10px;
+    }
+
+    h1 {
+        margin-left: 10%;
+
+        @media @mobile {
+            margin: 10px auto;
+        }
+    }
+
+    nav {
+        .flex(@justify: space-around;);
+        width: 36%;
+        margin-right: 10%;
+
+        @media @mobile {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        a {
+            font-size: 1.6rem;
+            color: @shark;
+            text-decoration: none;
+
+            &:hover {
+                color: lighten(@shark, 50%);
+            }
+        }
+    }
+}

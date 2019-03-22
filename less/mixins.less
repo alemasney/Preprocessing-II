@@ -1,1 +1,21 @@
 // Mixins in here
+
+.flex(@justify: center; @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.primary-btn() {
+    width: 80%;
+    font-size: 1.8rem;
+    color: @white;
+    padding: 12px;
+    background-color: @button-bg;
+    border-radius: 12px;
+    text-align: center;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
